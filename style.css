@@ -54,7 +54,7 @@
     font-size: 1.2em;
 }
 
-li:nth-child(odd)
+.list__item_colored
 {
     background-color: #227c9750;
 }
@@ -64,6 +64,11 @@ li:nth-child(odd)
     font-size: 1.5em;
     position: relative;
     cursor: pointer;
+}
+.list__item:hover
+{
+    background-color:rgba(0, 0, 0, .3) !important;
+
 }
 .list__item_checked
 {
