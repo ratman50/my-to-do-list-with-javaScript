@@ -42,10 +42,14 @@ listItem.forEach((item, index) => {
   });
   btnClose.addEventListener("click", () => {
     item.style.display = "none";
-   
+    color(index, listItem)
   });
 });
 
-function color(params, list) {
-    
+function color(pos, list) {
+    for (let i = pos+1; i < list.length; i++) {
+        const element = list[i];
+            element.classList.toggle("list__item_colored")
+
+    }
 }
